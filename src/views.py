@@ -22,6 +22,7 @@ def get_json():
 @views.route('/data')
 def get_data():
     data = request.json
+    print(data)
     return jsonify(data)
 
 @views.route('/go-to-home')
